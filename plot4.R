@@ -8,7 +8,7 @@ plot4 <- function(){
         filtereddata$DateTime<-strptime(paste(filtereddata$Date, filtereddata$Time, sep=" "), "%Y-%m-%d %H:%M:%S")
         filtereddata$Time<-strptime(filtereddata$Time,"%H:%M:%S")
         
-        png(filename="plot4a.png",width = 480, height = 480)
+        png(filename="plot4.png",width = 480, height = 480)
         par(mfrow=c(2,2))
         ### Plot 1
         plot(filtereddata$DateTime, filtereddata$Global_active_power,  type="l", ylab= "Global Active Power",xlab="")
