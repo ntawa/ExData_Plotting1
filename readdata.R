@@ -11,4 +11,4 @@ readdata <- function(){
         
         write.table(filtereddata, file="filtereddata.txt", row.name=FALSE, sep=";")
         
-}
+} 
